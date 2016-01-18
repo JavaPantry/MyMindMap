@@ -1,0 +1,25 @@
+JavaPantry/MindMap
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
+Quick setup — if you’ve done this kind of thing before
+
+ Set up in Desktop	or
+ HTTPS
+ SSH
+
+https://github.com/JavaPantry/MindMap.git
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+
+echo "# MindMap" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/JavaPantry/MindMap.git
+git push -u origin master
+…or push an existing repository from the command line
+
+
+git remote add origin https://github.com/JavaPantry/MindMap.git
+git push -u origin master
