@@ -1,5 +1,6 @@
 # The Complete NodeJs Developer Course
 
+![alt text](MapSnapshotJan18.png)
 ## Section: 1 - What You'll Learn
 ### Lecture 1: What You'll Learn
 
@@ -154,6 +155,11 @@
 ### Lecture 82: Associating Users With Their Todo Pt. 2
 ### Lecture 83: Deploying To Heroku
 ### Lecture 84: Logout Part 1
+- create module model\token.js
+- to secure token use crypto-js to hash token
+- create table to store hashed tokens
+- in server.js in /users/login store token
+
 ### Lecture 85: Logout Part 2
 
 ## Section: 10 - Socket.io, The Front-end, and A Chat App
