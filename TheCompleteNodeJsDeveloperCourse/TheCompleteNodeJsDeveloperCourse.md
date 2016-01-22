@@ -1,6 +1,6 @@
 # The Complete NodeJs Developer Course
 
-![alt text](gitSilhuette.png)
+![alt text](gitSilhuette.PNG)
 ## Section: 1 - What You'll Learn
 ### Lecture 1: What You'll Learn
 
