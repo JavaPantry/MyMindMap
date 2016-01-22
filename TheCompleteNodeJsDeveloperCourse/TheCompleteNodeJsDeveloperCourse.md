@@ -164,11 +164,17 @@
 
 ## Section: 10 - Socket.io, The Front-end, and A Chat App
 ### Lecture 86: Getting Started
+- npm install express@4.13.3 --save
 ### Lecture 87: Adding Socket.io To Your App
+- install jQuery
+- install socket javascript library from https://cdn.socket.io/socket.io-1.3.7.js
+    -- select all, save as file <project>\public\js\socket.io-1.3.7.js
+
 ### Lecture 88: Exploring The Front-end
 ### Lecture 89: Sending Live Data Back & Forth
 ### Lecture 90: Creating The Front-end UI
 ### Lecture 91: Showing Messages In App
+
 ### Lecture 92: Working With Time
 ### Lecture 93: Timestamps
 ### Lecture 94: Show Message Time In Chat App
