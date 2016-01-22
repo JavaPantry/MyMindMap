@@ -174,10 +174,17 @@
 ### Lecture 89: Sending Live Data Back & Forth
 ### Lecture 90: Creating The Front-end UI
 ### Lecture 91: Showing Messages In App
-
 ### Lecture 92: Working With Time
+- moment.js from momentjs.com 
 ### Lecture 93: Timestamps
+- epochconverter.com to play unix timestamp
+- get timestamp from moment 
+    - _now.format('X')_ unix timestamp in sec    
+    - _now.format('x')_ OR _now.valueof()_ unix timestamp in millisec
+    - moment.utc(timestamp) get time from unix timestamp
+
 ### Lecture 94: Show Message Time In Chat App
+
 ### Lecture 95: Parsing Query Params
 ### Lecture 96: Showing Names
 ### Lecture 97: Add A Join Page
