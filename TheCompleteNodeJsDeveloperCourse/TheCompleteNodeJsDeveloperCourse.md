@@ -186,10 +186,25 @@
 ### Lecture 94: Show Message Time In Chat App
 
 ### Lecture 95: Parsing Query Params
+- small query parse support util gist.github.com/andrewjmead -> QueryParam.js -> click btn 'Raw' -> save as QueryParam.js
 ### Lecture 96: Showing Names
+- use _action='chat.html'_ in form tag to redirect with form submitted par-rs
 ### Lecture 97: Add A Join Page
 ### Lecture 98: Chat Room Names
+- use regular expression str.replace(/\+/g, ' ')
+    - / - start and end of regex
+    - g after ent slash is the _global_ modifier (to replace globally)
+    - \+ - escape plus sign with is special character in regex
+    - thus __/\+/g__ means replace '+' in whole input string
+    - look mozilla developer org for regex syntax
+    
 ### Lecture 99: Connecting To A Room
+- socket emit custom message  _join room_ 
+    - socket.join(roomName)
+    - socket.brodcast.to(roomName).emit(message, {personNmae:'':message:'', timestamp:moment().valueOf()})
+    - socket.id and socket.to
+    
+    
 ### Lecture 100: Send Disconnect Message
 ### Lecture 101: Adding @currentUser command
 ### Lecture 102: Bootstrap & Styling The Join Page
