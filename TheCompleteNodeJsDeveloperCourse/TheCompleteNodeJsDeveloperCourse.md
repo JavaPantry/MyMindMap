@@ -203,11 +203,14 @@
     - socket.join(roomName)
     - socket.brodcast.to(roomName).emit(message, {personNmae:'':message:'', timestamp:moment().valueOf()})
     - socket.id and socket.to
-    
-    
+
 ### Lecture 100: Send Disconnect Message
+- socket event _disconnect_
 ### Lecture 101: Adding @currentUser command
+
 ### Lecture 102: Bootstrap & Styling The Join Page
+- getbootstrap.com
+- bootstrap CDN - bootstrap script hosted by bootstrapcdn.com  
 ### Lecture 103: Styling The Join Page
 ### Lecture 104: Styling The Chat Page
 ### Lecture 105: Final Custom Styles
