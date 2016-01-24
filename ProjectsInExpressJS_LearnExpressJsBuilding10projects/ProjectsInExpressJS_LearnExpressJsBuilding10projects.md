@@ -10,21 +10,105 @@
 ### Lecture 5: Static Web Server
 ### Lecture 6: Package.json & More Requests - Basics
 ### Lecture 7: Package.json & More Requests - Advance
-## Quiz 1: Chapter 1 ## Quiz
+## Quiz 1: Chapter 1
 
 ## Section: 3 - PC Repair Website
 ### Lecture 8: Project Intro
 ### Lecture 9: Express Generator
+- see http://expressjs.com/en/starter/generator.html
+    - npm install -g express-generator
+    - express myapp
+    - cd myapp
+    - npm install
+    - these commands layout project structure
+
+    ├── app.js
+    ├── bin
+    │   └── www
+    ├── package.json
+    ├── public
+    │   ├── images
+    │   ├── javascripts
+    │   └── stylesheets
+    │       └── style.css
+    ├── routes
+    │   ├── index.js
+    │   └── users.js
+    └── views
+        ├── error.jade
+        ├── index.jade
+        └── layout.jade     
+    - and than _npm install_ to install required by generator
+    - npm start
+    - install bootstrap client side css and js
+- html2jade.org - jadeconverter  
+
 ### Lecture 10: Jade Layouts
 ### Lecture 11: Fetching JSON
 ### Lecture 12: Nodemailer Contact
-## Quiz 2: Chapter 2 ## Quiz
+- Nodemailer github.com/andris9/Nodemailer
+
+### Quiz 2: Chapter 2 ## Quiz
 
 ## Section: 4 - SportsBlog Application
 ### Lecture 13: Project Intro
 ### Lecture 14: MongoDB & Middleware
+- install MongoDb from mongodb.org (download c:\WWWDownload\mongodb-win32-x86_64-2008plus-ssl-3.2.1-signed.msi)
+    - open cmd as Administrator
+    - cd C:\Program Files\MongoDB\Server\3.2\bin
+    - create forlders in root c:\mongodb\data\db\
+    - create log c:\mongodb\log\mongo.log
+
+    C:\Program Files\MongoDB\Server\3.2\bin>mongod --directoryperdb --dbpath c:\mongodb\data\db --logpath c:\mongodb\log\mon
+    go.log --logappend --rest --install
+    2016-01-24T12:46:07.432-0500 I CONTROL  [main] ** WARNING: --rest is specified without --httpinterface,
+    2016-01-24T12:46:07.432-0500 I CONTROL  [main] **          enabling http interface
+    C:\Program Files\MongoDB\Server\3.2\bin>net start MongoDB
+    The MongoDB service was started successfully.    
+    
+    - to stop service use > net stop MongoDB (or through control panel>services)
+    - set path to c:\Program Files\MongoDB\Server\3.2\bin
+    - verify in cmd >mongo and than
+    
+    >show databases<br>
+    local  0.000GB
+
+- add to package.json
+
+
+     
+    "connect-flash": "*",
+    "express-messages":"*",
+    "express-session":"*",
+    "express-validator":"*",
+    "moment":"*",
+    "mongoose":"*"
+
+- install nodemon: add "main": "bin/www" in  package.json
+
+    >npm install -g nodemon
+- npm install (all added modules)
+    - gyp ERR! stack Error: Can't find Python executable "python", you can set the PYTHON env variable.
+    - need come back and install python
+        - python-3.5.1 to c:\WWWDownload
+        - add path to C:\Users\Alexei\AppData\Local\Programs\Python\Python35-32   <-  python.exe
+        
+- nodemon in project folder        
+- setup middleware in app.js (copy from downloaded project source zip)
+- visit startbootstrap.com 
+    - click browse theme and template
+    - select Clean Blog and download<br>
+    ![Clean Blog Theme](CleanBlogTheme.PNG)
+    - copy css and javascript from zip
+    - copy \fonts and \img from zip to public directory
+
 ### Lecture 15: Routes & Views - Basics
 ### Lecture 16: Routes & Views - Concepts
+
+- Error in rendering. on 51st second not clear what indent should be in _pasted code_<br>
+  ![Indent content](Indent.PNG)  
+    - backup after fixing error c:\WebstormProjects\SportsBlog.src\SportsBlogBackupLecture16_1stMinute.zip
+    
 ### Lecture 17: Routes & Views - Implementation
 ### Lecture 18: Categories - Basics
 ### Lecture 19: Categories - Concepts

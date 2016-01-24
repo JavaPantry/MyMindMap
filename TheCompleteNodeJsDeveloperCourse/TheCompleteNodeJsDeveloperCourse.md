@@ -239,3 +239,4 @@
 2. how to setup/populate production database without manually insert or comment pieces of code in db.sequlize.sync({force:true})
     - is the answer in Lecture 83? The answer is: - Yes, use db.sequlize.sync({force:true}) in pushed code and initialize with separate http post requests.
 
+![Certificate](Certificate.PNG)
