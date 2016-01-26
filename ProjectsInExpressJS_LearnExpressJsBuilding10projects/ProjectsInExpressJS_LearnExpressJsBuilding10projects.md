@@ -85,8 +85,8 @@
     "mongoose":"*"
 
 - install nodemon: add "main": "bin/www" in  package.json
-
     >npm install -g nodemon
+
 - npm install (all added modules)
     - gyp ERR! stack Error: Can't find Python executable "python", you can set the PYTHON env variable.
     - need come back and install python
@@ -107,10 +107,45 @@
 
 - Error in rendering. on 51st second not clear what indent should be in _pasted code_<br>
   ![Indent content](Indent.PNG)  
-    - backup after fixing error c:\WebstormProjects\SportsBlog.src\SportsBlogBackupLecture16_1stMinute.zip
+    - backup after fixing error c:\WebstormProjects\SportsBlog.src\backup\SportsBlogBackupLecture16_1stMinute.zip
+    - backup after lecture completed c:\WebstormProjects\SportsBlog.src\backup\SportsBlogBackupLecture16_completed.zip
     
 ### Lecture 17: Routes & Views - Implementation
+
 ### Lecture 18: Categories - Basics
+- create and put initial sample data in mongo db
+    - open cmd in Admin mode
+    - cd to mongo bin directory and start _mongo_ (Since I've set PATH to mongo\...\bin I type _mongo_ in c drive)
+
+    C:\Users\Alexei>mongo<br>
+    2016-01-24T14:03:00.817-0500 I CONTROL  [main] Hotfix KB2731284 or later updateis not installed, will zero-out data files<br>
+    MongoDB shell version: 3.2.1<br>
+    connecting to: test<br>
+    Server has startup warnings:<br>
+    2016-01-24T12:46:59.142-0500 I CONTROL  [main] ** WARNING: --rest is specified without --httpinterface,<br>
+    2016-01-24T12:46:59.143-0500 I CONTROL  [main] **          enabling http interface<br>
+    > show databases<br>
+    local  0.000GB<br>
+    > show databases<br>
+    local  0.000GB<br>
+    > db<br>
+    test<br>
+    > use sportsblog<br>
+    switched to db sportsblog<br>
+    > db<br>
+    sportsblog<br>
+    > db.createCollection('categories')<br>
+    { "ok" : 1 }<br>
+    > show collections<br>
+    categories<br>
+    > db.categories.insert({title:'Baseball', description:'These are baseball articles'});
+    WriteResult({ "nInserted" : 1 })<br>
+    > db.categories.insert({title:'Bike race', description:'These are bike race articles'});<br>
+    WriteResult({ "nInserted" : 1 })<br>
+    > db.categories.find()<br>
+    { "_id" : ObjectId("56a6c301df3122128a52fee9"), "title" : "Baseball", "description" : "These are baseball articles" }<br>
+    { "_id" : ObjectId("56a6c322df3122128a52feea"), "title" : "Bike race", "description" : "These are bike race articles" }<br>
+    
 ### Lecture 19: Categories - Concepts
 ### Lecture 20: Categories - Implementation
 ### Lecture 21: Articles - Introduction
@@ -118,6 +153,7 @@
 ### Lecture 23: Articles - Implementation
 ### Lecture 24: Articles - Final View
 ### Lecture 25: Comments
+- save final project to _c:\WebstormProjects\SportsBlog.src\SportsBlog25Final.zip_
 ## Quiz 3: Chapter 3 ## Quiz
 
 ## Section: 5 - User Login System
