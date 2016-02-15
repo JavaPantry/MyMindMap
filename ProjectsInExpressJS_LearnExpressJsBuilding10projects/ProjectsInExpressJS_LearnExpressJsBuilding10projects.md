@@ -41,7 +41,7 @@
     - and than _npm install_ to install required by generator
     - npm start
     - install bootstrap client side css and js
-- html2jade.org - jadeconverter  
+- html2jade.org - jade converter  
 
 ### Lecture 10: Jade Layouts
 ### Lecture 11: Fetching JSON
@@ -159,17 +159,36 @@
 ## Section: 5 - User Login System
 ### Lecture 26: Project Intro
 ### Lecture 27: Handlebars & Dependencies
+- Passport - authentication packages
+- bcrypt
+- generate app with express generator ()we'll use webStorm 
+    - type `express passport` in cmd
+- add bcryptjs (bcrypt - is too heavy and have many dependencies)
+- to use node mon add "main": "bin/www",
+- etc. see package.json in C:\WebstormProjects\passport
+- replace `jade` with `"express-handlebars":"*"` in package.json and set engine in app.js 
+    - set the engine `app.engine('handlebars', exphbs({defaultLayout:'layout'}));`
+    - replace jade `app.set('view engine', 'handlebars');`
+    - also we need to include it `var exphbs = require('express-handlebars');`
+    -  rename *.jade to *.handlebarss
+
 ### Lecture 28: User Interface - Basic
 ### Lecture 29: User Interface - Implementation
 ### Lecture 30: Registration - Initial Steps
+- [Passport web site](http://passportjs.org/)
+- to setup passport create middleware config file `passport\config\passport.js`
+- and database C:\WebstormProjects\passport\models\user.js
 ### Lecture 31: Registration - Basic
 ### Lecture 32: Registration - Final Implementation
 ### Lecture 33: Login
 ## Quiz 4: Chapter 4 ## Quiz
 
 ## Section: 6 - Chat Using Socket.io
-### Lecture 34: Project Intro
+### Lecture 34: Project Intro 
+- Create eChat app
 ### Lecture 35: App & Dependency Setup
+- socket.io
+
 ### Lecture 36: Bootstrap UI
 ### Lecture 37: Adding Usernames
 ### Lecture 38: Sending Chat Messages
@@ -177,9 +196,50 @@
 
 ## Section: 7 - ClientKeeper
 ### Lecture 39: Project Intro
+- project use mongojs [google: mongojs vs mongoose](https://www.google.ca/search?q=mongojs+vs+mongoose&ie=utf-8&oe=utf-8&gws_rd=cr&ei=FeW_VsKYOMSuevHtirgE)
+
 ### Lecture 40: Server & Client Files - Basic
+- downloadable project zip
+- will use `c:\clientkeeper>node app` to start server
+    - check what the difference between `node app` and `C:\WebstormProjects\HeroesAng2>npm start`
+
 ### Lecture 41: Server & Client Files - Implementation
+- install bower 
+    - c:\clientkeeper> npm install bower -g
+- after  create basic folder structure for express app with static folder
+    - cd to public
+    - c:\clientkeeper\public>bower install angular --save
+    - that's create new folders with angular under public `\bower_components\angular`
+    - c:\clientkeeper\public>bower install bootstrap --save
+    - that also install jQuery
+- copy and paste navbar from getbootstrap.com->getStarted->examples->bootstrap starter template-> get source-> copy `<nav>...</nav>`
+- bootswatch.com to select different theme copy and paste bootstrap.css to replace standard bootstrap.css
+- getbootstrap->CSS->table-> striped table
+- insert table with columns and editor row
+- remove `navbar-fixed-top` from navbar
+
 ### Lecture 42: Getting the Clients
+- in cmd wnd go to mongodb/bin directory `c:\program files\mongoDB\Server\3.0\bin` and run `mongo`
+- mongo>show dbs
+- mongo>use clientkeeper
+    - mongo>switched to db clientkeeper
+- mongo>show collections
+    - none yet
+- mongo>db.createCollection('clients')
+    - confirm db and collection existence
+    - mongo>show collections - shows clents
+    - mongo>show dbs - shows clientkeeper
+    - mongo>db.clients.find() - shows nothing
+    - mongo>db.clients.insert({first_name:'John',last_name:'Doe', email:'test@g.com',phone:'416-576-9967'});
+    - mongo>db.clients.find() - shows record
+    - mongo>db.clients.find().pretty() - shows nice formatted record
+    
+- in express `app.js` connect to specific database in mongo by
+    var mongojs = require('mongojs');
+    var db = mongojs('clientkeeper',['clients']);
+
+- introduce angular's AppController.js
+
 ### Lecture 43: Getting the Clients - Final Steps
 ### Lecture 44: Adding Clients
 ### Lecture 45: Update & Delete Clients - Basics
@@ -188,8 +248,44 @@
 
 ## Section: 8 - Job Board Using MEAN.js
 ### Lecture 47: Project Intro
+- use [MEAN.js](meanjs.org)
+- use YO generator
+- use of modules on front and back ends
+- use of Angular filters
 ### Lecture 48: Mean.js Setup
+- create project folder `bestjobs`
+- install bower 
+    - c:\bestjobs> npm install -g bower 
+- install python from python.org 
+- will not install `Visual studio Express`
+- install grunt 
+    - c:\bestjobs> npm install -g grunt-cli
+- install express 
+    - c:\bestjobs> npm install -g express
+- install yo 
+    - c:\bestjobs> npm install -g yo
+- install yo generator for MEANJS
+    - c:\bestjobs> npm install -g generator-meanjs
+- generate app
+    - c:\bestjobs> yo meanjs 
+    - on question 'Would you like to genetrate the article example CRUD module?' answer Yes
+    - you might need to install node-gyp (_have no idea what it is_)
+- run server with grunt
+    - c:\bestjobs> grunt
+- you might need to reinstal bower angular
+    - c:\bestjobs>bower install --allow-root
+
+![YoGeneratedMEANJS](YoGeneratedMEANJS.PNG)
+
+- These all steps generate quite application for us with:
+    - sign in form (with social account support)
+    - article module 
+- clean up generated crap 
+
 ### Lecture 49: Creating the Jobs Module - Basics
+- generate job crud module with *yo*
+    - c:\bestjobs>yo meanjs:crud-module jobs
+
 ### Lecture 50: Creating the Jobs Module - Implementation
 ### Lecture 51: List & Details View
 ### Lecture 52: Edit, Delete & Filtering
@@ -197,6 +293,9 @@
 
 ## Section: 9 - MovieBase Using Kraken
 ### Lecture 53: Project Intro
+- See [Kraken](kraken.com)
+
+
 ### Lecture 54: Kraken Setup
 ### Lecture 55: Kraken Setup - Final Steps
 ### Lecture 56: Movie Model - Basics
