@@ -245,7 +245,7 @@
 ### Lecture 45: Update & Delete Clients - Basics
 ### Lecture 46: Update & Delete Clients - Implementations
 ## Quiz 6: Chapter 6 ## Quiz
-
+    
 ## Section: 8 - Job Board Using MEAN.js
 ### Lecture 47: Project Intro
 - use [MEAN.js](meanjs.org)
@@ -253,6 +253,8 @@
 - use of modules on front and back ends
 - use of Angular filters
 ### Lecture 48: Mean.js Setup
+- upgrade NPM itself >npm install -g npm
+
 - create project folder `bestjobs`
 - install bower 
     - c:\bestjobs> npm install -g bower 
@@ -277,6 +279,18 @@
 
 ![YoGeneratedMEANJS](YoGeneratedMEANJS.PNG)
 
+- cd to project folder (there is error message) and run > grunt
+
+    Warning:
+    You need to have Ruby and Sass installed and in your PATH for this task to work.
+    More info: https://github.com/gruntjs/grunt-contrib-sass
+
+- >grunt --force
+- run http://localhost:3000/
+    - Congrats! You've configured and run the sample application
+    
+    
+
 - These all steps generate quite application for us with:
     - sign in form (with social account support)
     - article module 
@@ -285,6 +299,11 @@
 ### Lecture 49: Creating the Jobs Module - Basics
 - generate job crud module with *yo*
     - c:\bestjobs>yo meanjs:crud-module jobs
+        - google error: [google yo meanjs:crud-module jobs  ](https://www.google.ca/search?q=yo+meanjs%3Acrud-module&oq=yo+meanjs%3Acrud-module&aqs=chrome..69i57j69i64.856j0j7&sourceid=chrome&es_sm=122&ie=UTF-8)
+        - Bossable.com - MEAN Stack Tutorial: Getting started for beginners [Video](https://www.youtube.com/watch?v=rlVwJvE3C5A&list=PL6rhBJX0L3TWYrwrQIi1_MzQDvVhkUVPI)
+        
+
+
 
 ### Lecture 50: Creating the Jobs Module - Implementation
 ### Lecture 51: List & Details View
