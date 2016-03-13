@@ -7,6 +7,11 @@ Eugen Paraschiv
 - [Course source code on github](https://github.com/eugenp/course)
 - downloaded to workspace c:\SpringSecurityCourse_Workspace\course-master.zip
 - [Project home page](http://localhost:8080/spring-security/)
+- Course uses [Mustache framework](https://github.com/janl/mustache.js)
+
+
+
+
 ## Section: 1 - Spring Security Setup
 - Lecture 1: Introduction to the Course
 - Lecture 2: The Spring Security Setup and Form-based Authentication
