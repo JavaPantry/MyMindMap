@@ -35,6 +35,9 @@ To be able to describe Apache Spark as a solution in a given context. Clustering
     - save VM for vmWare in c:\WWWDownload\
     - open VmWare Workstation and just open c:\WWWDownload\Hortonworks_sanbox_with_hdp_2_4_vmware.ova
     - try to open http://192.168.217.129/ in chrome
+    
+Google 'can't open hortonworks sandbox url'    
+    
     - check out [tutorials](http://hortonworks.com/tutorials/)
     
     3. Windows: git bash shell http://git-scm.com/downloads
