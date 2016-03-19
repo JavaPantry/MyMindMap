@@ -35,8 +35,33 @@ To be able to describe Apache Spark as a solution in a given context. Clustering
     - save VM for vmWare in c:\WWWDownload\
     - open VmWare Workstation and just open c:\WWWDownload\Hortonworks_sanbox_with_hdp_2_4_vmware.ova
     - try to open http://192.168.217.129/ in chrome
-    
+
+```
+During vm initialization I can see "bringing up interface eth0 device eth0 does not seem to be present delaying initialization" in console.
+```
+
+![image](vmWareEth0DeviceError.PNG)
+
+
+```
+I've try 'putty' this address. The result is "Network error: Connection timed out".
+```
+
+
+```
+c:\WebstormProjects\LearningD3>ping 192.168.217.129
+Pinging 192.168.217.129 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Ping statistics for 192.168.217.129:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+```
+
 Google 'can't open hortonworks sandbox url'    
+
+    
     
     - check out [tutorials](http://hortonworks.com/tutorials/)
     
