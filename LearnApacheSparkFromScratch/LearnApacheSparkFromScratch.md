@@ -52,23 +52,28 @@ I've try 'putty' this address. The result is "Network error: Connection timed ou
 c:\WebstormProjects\LearningD3>ping 192.168.217.129
 Pinging 192.168.217.129 with 32 bytes of data:
 Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
 Ping statistics for 192.168.217.129:
     Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
 ```
 
-Google 'can't open hortonworks sandbox url'    
+- Google: 'can't open hortonworks sandbox url'    
 
-    
-    
-    - check out [tutorials](http://hortonworks.com/tutorials/)
+## VirtualBox 
+- install Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads)    
+- ![Hortonworks_sanbox_with_hdp_2_4_virtualboxCapture](Hortonworks_sanbox_with_hdp_2_4_virtualboxCapture.PNG)
+- ![hdp_2_4_virtualboxInLocalhost](hdp_2_4_virtualboxInLocalhost.PNG)
+- SSH with putty (host 127.0.0.1, port 2222, username root) 
+- required by system change password to *alex140839* (original *hadoop*)
+
+- check out [tutorials](http://hortonworks.com/tutorials/)
     
     3. Windows: git bash shell http://git-scm.com/downloads
     4. Windows: a ssh directory browser http://www.swish-sftp.org/
     5. Filezilla https://filezilla-project.org/
     6. 7 zip
+
+
+
 
 2, install the virtual machine [instructions here](http://hortonworks.com/wp-content/uploads/unversioned/pdfs/InstallingHortonworksSandbox2onWindowsusingVB.pdf)
 3. Download spark binary. please note over time the versions and download links change. change this is the current compatible jar for the Hortonworks VM
@@ -79,7 +84,7 @@ wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/spark/1.2.0/spark-1.
 
 1.	connect with filezilla
 2.	host 127.0.0.1
-             port 2222
+port 2222
 username root
 password hadoop
   5 Set the SPARK_HADOOP_VERSION flag in the  Hortonworks vm  environment variable
@@ -92,7 +97,7 @@ hadoop
 then append  
              export SPARK_HADOOP_VERSION=2.2.0
              then  :wq   then init 6
-             then in the Hortonworks vm ’s Bash shell check with printenv you should  should see
+             then in the Hortonworks vm ’s Bash shell check with **printenv** you should  should see
 
 
 6.Install the Apache Spark Binaries and Example Source Code
