@@ -122,4 +122,43 @@ see screenshot below in the ssh directory browser with show hidden folders enabl
 8. Running the spark api from the scala interface
 
 
+## Section: 1 - Introduction To Spark
+### Lecture 1: Course Introduction
+
+## Section: 2 - Introduction and Application of Apache Spark
+### Lecture 2: Understanding Apache Spark
+### Lecture 3: Install Apache Spark on Cluster
+### Lecture 4: Apache Spark Scala API
+### Lecture 5: Running Apache Spark Code
+
+## Section: 3 - Apache Spark with YARN Cluster
+### Lecture 6: Apache Spark in Yarn Context
+### Lecture 7: Apache Spark with Yarn
+### Lecture 8: Yarn Clusters
+#### Setup maven pom file for java and scala projects
+- Create fresh maven project in IntelliJ IDE 
+![MavenForSparkJavaScalaProject](MavenForSparkJavaScalaProject.PNG)
+- build our self 
+- git hub hadoop-common-2.2.0-bin as runtime dependency for running example project
+- create env var HADOOP_HOME pointing to where you check-out hadoop-common-2.2.0-bin 
+- after run as standalone rebuild with flag runStandalone=true
+- deploy on spark root
+- run spark-submit with custom parameters
+### Lecture 9: Bonus Video - Yarn on Eclipse
+- Video&Doc to setup maven for spark project in eclipse
+
+## Section: 4 - Spark Applications
+### Lecture 10: Different types of Spark Applications
+### Lecture 11: Spark with Gradle
+### Lecture 12: Spark Applications - SQL Library
+
+## Section: 5 - Apache Spark APIs
+### Lecture 13: Spark Streaming Applications
+### Lecture 14: Twitter Stream Application
+### Lecture 15: Lambda Architecture
+
+## Section: 6 - Course Summary
+### Lecture 16: Summary 
+
+
 

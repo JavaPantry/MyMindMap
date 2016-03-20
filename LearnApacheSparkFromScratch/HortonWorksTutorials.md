@@ -7,6 +7,11 @@ During vm initialization I can see "bringing up interface eth0 device eth0 does 
 ```
 - Error screenshot ![image](vmWareEth0DeviceError.PNG)
 
+- [Interacting with Data on HDP using Apache Zeppelin and Apache Spark](http://hortonworks.com/hadoop-tutorial/interacting-with-data-on-hdp-using-scala-and-apache-spark/) suggests
+
+`Note: In local mode your host IP should be 127.0.0.1 for VirtualBox and 172.16.148.128 for VmWare`
+
+
 ## VirtualBox 
 - install Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads)    
 - ![Hortonworks_sanbox_with_hdp_2_4_virtualboxCapture](Hortonworks_sanbox_with_hdp_2_4_virtualboxCapture.PNG)
@@ -17,9 +22,6 @@ During vm initialization I can see "bringing up interface eth0 device eth0 does 
 - [Welcome to Hortonworks Sandbox](http://localhost:8888/)
 - [Welcome to Ambary](http://localhost:8080/)
 - [Welcome to Zeppelin](http://localhost:9995/#/)
-
-
-
 
 - check out [tutorials](http://hortonworks.com/tutorials/)
 - [Hands-on Tour of Apache Spark in 5 Minutes](http://hortonworks.com/hadoop-tutorial/hands-on-tour-of-apache-spark-in-5-minutes/)
@@ -32,3 +34,14 @@ During vm initialization I can see "bringing up interface eth0 device eth0 does 
 4. Please also explore the [HDP documentation](http://docs.hortonworks.com/).
 5. [Hortonworks Community Connection(HCC)](http://hortonworks.com/community/)
 
+---
+Spark on Vbox
+
+```
+    [root@sandbox /]# whereis spark
+    spark: /etc/spark
+    [root@sandbox /]# cd  /etc/spark
+    [root@sandbox spark]# ls
+    2.4.0.0-169  conf  conf.backup
+    [root@sandbox spark]#
+```
