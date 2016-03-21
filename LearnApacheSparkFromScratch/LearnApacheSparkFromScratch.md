@@ -139,9 +139,9 @@ see screenshot below in the ssh directory browser with show hidden folders enabl
 - Create fresh maven project in IntelliJ IDE 
 ![MavenForSparkJavaScalaProject](MavenForSparkJavaScalaProject.PNG)
 - build our self 
-- git hub hadoop-common-2.2.0-bin as runtime dependency for running example project
-- create env var HADOOP_HOME pointing to where you check-out hadoop-common-2.2.0-bin 
-- after run as standalone rebuild with flag runStandalone=true
+- git hub __hadoop-common-2.2.0-bin__ as runtime dependency for running example project
+- create env var HADOOP_HOME pointing to where you check-out __hadoop-common-2.2.0-bin__ 
+- after run as standalone rebuild with flag runOnCluster=false
 - deploy on spark root
 - run spark-submit with custom parameters
 ### Lecture 9: Bonus Video - Yarn on Eclipse
@@ -150,11 +150,19 @@ see screenshot below in the ssh directory browser with show hidden folders enabl
 ## Section: 4 - Spark Applications
 ### Lecture 10: Different types of Spark Applications
 ### Lecture 11: Spark with Gradle
+- Gradle build file explanation
+- JavaKMeans application
+- if you have java 8 installed build with _sourceCompatibility = 1.7_ option set in gradle build file ( **not sure if it apply to latest HDP** )
+- if build with IDE set version 1.7 in _options -> Java Compiler -> Project bytecode version -> 1.7_ ( **not sure if it apply to latest HDP** )
 ### Lecture 12: Spark Applications - SQL Library
 
 ## Section: 5 - Apache Spark APIs
 ### Lecture 13: Spark Streaming Applications
 ### Lecture 14: Twitter Stream Application
+- Twitter Stream Application = EduonixLambdaArchitecture project
+- use of _cloudera_ repository ( instead of __hadoop-common-2.2.0-bin__  )
+- Use version 3.0.3 of _twitter4j_core_ and _twitter4j_stream_   ( **not sure if it apply to latest HDP** )
+- gson (google json library)
 ### Lecture 15: Lambda Architecture
 
 ## Section: 6 - Course Summary
