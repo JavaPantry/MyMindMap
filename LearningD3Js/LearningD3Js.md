@@ -5,6 +5,7 @@
 
 [Wiki and Tutorial](https://github.com/mbostock/d3/wiki)
 
+[Github sources](https://github.com/mbostock/d3)
 
 [D3 for Mere Mortals (Demo from wiki)](http://www.recursion.org/d3-for-mere-mortals/)
 
